@@ -1,0 +1,102 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-image: url("../Projeto1/img/fundo.jpg");
+    background-size: 100%;
+}
+header{
+    background-color: #241412;
+    height: 90px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#logo{
+    color: white;
+    margin: 0px 0px 0px 50px;
+}
+li{
+    list-style: none;
+    display: inline-flex;
+    font-size: 28px;
+}
+a{
+    margin: 20px 50px 20px 20px;
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    cursor: pointer;
+    color: #ad473f;
+}
+main{
+    margin-left: 4%;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.itens{
+    border-radius: 20px;
+    background-color: #3a2422;
+    margin: 30px 30px 30px 50px;
+    width: 240px;
+    height: 190px;
+}
+.itens img{
+    margin-left: 5%;
+    width: 90%;
+    height: 150px;
+    border-radius: 20px;
+}
+.itens h2{
+    color: white;
+    margin-left: 32%;
+}
+aside{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 25%;
+    height: 250px;
+    padding: 20px;
+    margin-left: 60%;
+    margin-top: -24.4%;
+    border-radius: 20px;
+}
+aside p{
+    font-size: 23px;
+}
+#divul{
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 25%;
+    margin-top: 2%;
+    margin-left: 60%;
+}
+#divul a{
+    color: black;
+}
+#loc{
+    margin:3% 0px 2% 3.5%;
+}
+#pt{
+    margin-left: 90px;
+    display: inline-flex;
+}
+.pontos{
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 5%;
+    margin-left: 5%;
+    padding: 20px;
+    height: 220px;
+    width: 20%;
+}
