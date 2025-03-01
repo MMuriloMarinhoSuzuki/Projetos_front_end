@@ -1,0 +1,96 @@
+:root{
+    --fontColor1:#000;
+    --fontColor2:#fff;
+    --fontColor3:#7e4def; 
+    --bgColor1:#1900ff;
+    --bgColor2:#090809;
+    --bgColor3:#7700ff;
+    --bgColor4:#6F0D2A;
+    --bgColor5:#b23ad6;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* reseta as bordas */
+}
+body{
+    background: var(--bgColor1);
+    padding: 20px;
+}
+#container{
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--bgColor2);
+    color: var(--fontColor2);
+    padding: 20px;
+    border-radius: 10px;
+}
+header{
+    color: var(--fontColor3);
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.section{
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+}
+.produto-options, .acessorios-options{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    gap: 10px;
+}
+.item{
+    padding: 10px;
+    border: 1px solid #EEE;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.item:hover{
+    background: var(--bgColor3);
+    color: var(--fontColor1);
+}
+.item.selected{
+    background-color: var(--bgColor5);
+    border-color: var(--fontColor2);
+}
+.pagamento-options label{
+    display: block;
+    margin: 10px 0;
+}
+button{
+    background: var(--bgColor1);
+    color: var(--fontColor1);
+    padding: 10px 20px;
+    border: none;
+    margin-left: 25%;
+    cursor: pointer;
+    width: 50%;
+    font-size: 1rem;
+}
+button:hover{
+    background: var(--bgColor3);
+}
+#total{
+    color: var(--bgColor1);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: right;
+    margin: 20px 0;
+}
+footer{
+    background: transparent;
+}
+/* Estilização do botão de confirmação */
+.swal2-confirm {
+    background-color: #28a745;
+    width: 100px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

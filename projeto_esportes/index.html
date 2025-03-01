@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./src/assets/css/estilo.css">
+    <title>Loja Esportes</title>
+</head>
+
+
+<body>
+    
+    <div id="container">
+
+        <header>
+            <h1>Loja de Produtos esportivos</h1>
+        </header>
+
+        <h2>Escolha os seus Produtos</h2>
+
+        <section class="section">
+            <h2>Escolha o Produto</h2>
+            <div class="produto-options">
+                <article class="item" data-preco="295">
+                    <h3>Chuteira de Futsal</h3>
+                    <p>R$ 295,00</p>
+                </article>
+
+                <article class="item" data-preco="150">
+                    <h3>Luva de Futebol</h3>
+                    <p>R$ 150,00</p>
+                </article>
+
+                <article class="item" data-preco="250">
+                    <h3>Calção de Futebol</h3>
+                    <p>R$ 250,00</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+
+              <h2>Acessórios</h2>    
+            <div class="acessorios-options">
+                <article class="item" data-preco="198">
+                    <h3>Sacola de Futebol</h3>
+                    <p>R$ 198,00</p>
+                </article>
+
+                <article class="item" data-preco="200">
+                    <h3>Mochila de treino</h3>
+                    <p>R$ 200,00</p>
+                </article>
+
+                <article class="item" data-preco="50">
+                    <h3>Meião de Futebol</h3>
+                    <p>R$ 50,00</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Endereço de Entrega</h2>
+            <label for="endereco">
+                <input type="text" id="endereco" class="endereco" placeholder="Endereço de Entrega">
+            </label>
+        </section>
+
+        <section class="section">
+            <h2>Forma de Pagamento</h2>
+            <div class="pagamento-options">
+                <label>
+                    <input type="radio" name="pagamento" value="credito"> Cartão de Crédito
+                </label>
+                <label>
+                    <input type="radio" name="pagamento" value="debito"> Cartão de Débito
+                </label>
+                <label>
+                    <input type="radio" name="pagamento" value="dinheiro"> Dinheiro
+                </label>
+                <label>
+                    <input type="radio" name="pagamento" value="pix"> PIX
+                </label>
+            </div>
+        </section>
+
+        <footer>
+            <div id="total">Total: R$ 0,00</div>
+            <button onclick="finalizarPedido()" id="loadingBtn">Fazer Pedido</button>
+        </footer>
+        
+    </div>
+    
+    <script src="./src/assets/js/script.js"></script>
+</body>
+</html>
